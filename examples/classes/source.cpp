@@ -4,21 +4,21 @@
 using namespace std;
 
 
-class Animal {
+class Dog {
 
     public:
         string name;
     
-    Animal(string name);
+    Dog(string name);
 };
 
-Animal::Animal(string name) {
+Dog::Dog(string name) {
     this->name = name;
 }
 
 int main() {
 
-    Animal dog("Alfie");
+    Dog dog("Alfie");
 
     cout << "Dog name is: " << dog.name << endl;
 

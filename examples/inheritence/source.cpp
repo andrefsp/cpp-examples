@@ -7,10 +7,7 @@ class Vehicle {
     public:
         string color;
 
-    public: 
-        Vehicle(string color) {
-            this->color = color;
-        }
+    Vehicle(string color);
 };
 
 
@@ -18,24 +15,18 @@ class Car: public Vehicle {
     public:
         string brand;
 
-    public:
-        Car(string color, string brand): Vehicle(color) {
-            this->brand = brand;
-        }
+    Car(string color, string brand);
 };
 
 
-/*
 Vehicle::Vehicle(string color) {
     this->color = color;
 }
 
 
 Car::Car(string color, string brand): Vehicle(color) {
-    this->color = color;
     this->brand = brand;
 };
-*/
 
 
 int main() {
